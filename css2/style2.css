@@ -261,6 +261,17 @@ hero-image {
   .text-lg-right{
     text-align: right;
   }
+
+  @media screen  and (max-width: 800px){
+    
+    .about{
+        grid-template-columns: repeat(1,100%);
+      
+    }
+    .gray-scale{
+      margin-top: 10%;
+    }
+}
   
 /* botom */
 
@@ -306,35 +317,35 @@ hero-image {
 }
 
 /* reloj */
-
 .wrap{
   width: 90%;
-  max-width: 1000px;
-  margin: 10px 0px 10px 40px;
+  max-width: 80%;
+  margin: 5% 0% 10% 10%;
 }
 .widget{
   width: 40%;
-  margin: 2em;
+  margin: 0%;
 }
 .widget p{
   display: inline-block;
-  line-height: 1em;
+  line-height: 75%;
 }
 .fecha{
   font-family: Oswald, Arial;
+  width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 0.3125rem;
+    font-size: 150%;
+    margin-bottom: 5%;
     background:rgba(230, 218, 218, 0.5);
-    padding: 20px;
-    width: 100%;
+    padding: 10%; 
+   
 }
 
 .reloj{
   font-family: Oswald, Arial;
   width: 100%;
-  padding: 20px;
-  font-size: 4rem;
+  padding: 10%;
+  font-size: 180%;
   text-align: center;
   background-color:rgba(30, 80, 207, 0.5);
 
@@ -347,15 +358,14 @@ hero-image {
 .reloj .segundos,
 .reloj .ampm {
   
-  font-size: 2rem;
+  font-size:80%;
   display: block;
-  margin: 0;
+  margin: 0%;
 }
 .reloj_contenedor{
   margin-left: 30%;
   
-} 
-
+}
 
 
 /*Pagina de Contacto*/  
