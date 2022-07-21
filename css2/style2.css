@@ -1,0 +1,461 @@
+ :root{
+  --frist-color:white;
+  --first-color:white;
+
+ }
+ 
+ 
+ 
+ .body{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(../img2/argentina.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+ }
+.body:before {
+  content: " ";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #52c4df,#ad55c1);
+  opacity: 0.3;
+  background-image: url(../img2/images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+ 
+  
+}
+.navbar{
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar h1{
+
+  color: white;
+  font-family: Roboto, "sans-serif";
+  
+
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+text-decoration: none;
+color: white;
+font-family: Roboto, "sans-serif";
+font-size: 1.2rem;
+}
+.navbar ul li::before{
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: rgb(183, 235, 40);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+.navbar ul li:hover::before {
+  width: 100%;
+  
+
+}
+ /* IMAGEN DE MATRIX */
+ 
+ 
+ 
+ .naturaleza{ 
+  position: relative; 
+    padding: 1rem;
+    border: thin solid var(--white-color);
+    height: 30%;
+    width: 30%;
+    cursor: pointer;
+   
+}
+.matrix {
+position:absolute;
+top: 1;
+left: 0;
+  width: 38%;
+    height: 38%;
+    padding: 1rem;
+    background-color: var(--first-alpha-color);
+    color: var(--white-color);
+    opacity: 0;
+    pointer-events:none;
+    transition: all 10s ease-in-out;
+    
+   
+    visibility: hidden;
+    object-fit: cover;
+  }
+
+  .naturaleza:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+  }
+  .naturaleza:hover .matrix {
+    opacity:0;
+    
+  }
+
+  .cont{
+    height: 30%;
+    width: 30%;
+  }
+
+
+
+ /* foto de pc para capa y texto de opasidad  */
+
+
+  .contenedor{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .contenedor figure{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(246, 238, 238, 0.5);
+    cursor: pointer;
+    margin: 0;
+    padding: 2px;
+  text-align: center;
+  }
+  .contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms aese-out;
+    
+  }
+
+  .contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    transition: all 500ms aese-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  .contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+
+
+  /* FOOTER */
+
+footer{
+  width: 80%;
+  margin:1rem auto;
+  padding: 15px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: black;   
+}
+
+footer ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+footer ul li a {
+text-decoration: none;
+color: white;
+font-family: Roboto, "sans-serif";
+font-size: 1.2rem;
+padding: 60px;
+text-align: center;
+}
+.footerDerechos{
+  width: 80%;
+  margin:1rem auto;
+  background-color: black; 
+  color:azure;
+  font-size: 25px; 
+  align-items: center;
+}
+
+/* FOTO PERSONAL*/
+
+/*    HERO IMAGEN */
+
+hero-image {
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color);
+}
+
+.hero-image-title {
+  font-size: 7.5vw;
+  color: var(--hero-text-color);
+  color:blanchedalmond;
+}
+/* presentacion foto y habilidades */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+    color:white;
+    padding: 5%;
+  }
+  .gray-scale {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+
+  }
+  .text-lg-right{
+    text-align: right;
+  }
+  
+/* botom */
+
+.btn {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 255, 98);
+  
+
+}
+
+.services{
+  text-align: center;
+  padding: 5%;
+  font-size: x-large;
+  color:azure
+  
+
+
+}
+.capa{
+  font-size: large;
+  color:azure
+  
+}
+/* ENCABEZADOS DE LINK INTERNO */
+.titulo{
+   
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 300px;
+    text-align: center;
+    color: azure;
+}
+
+/* reloj */
+
+.wrap{
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px 0px 10px 40px;
+}
+.widget{
+  width: 40%;
+  margin: 2em;
+}
+.widget p{
+  display: inline-block;
+  line-height: 1em;
+}
+.fecha{
+  font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.3125rem;
+    background:rgba(230, 218, 218, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+  font-family: Oswald, Arial;
+  width: 100%;
+  padding: 20px;
+  font-size: 4rem;
+  text-align: center;
+  background-color:rgba(30, 80, 207, 0.5);
+
+}
+
+ .reloj .caja-segundos{
+  display: inline-block;
+  
+}
+.reloj .segundos,
+.reloj .ampm {
+  
+  font-size: 2rem;
+  display: block;
+  margin: 0;
+}
+.reloj_contenedor{
+  margin-left: 30%;
+  
+} 
+
+
+
+/*Pagina de Contacto*/  
+
+
+
+
+.contact-card {
+    margin: 1rem auto;
+    padding: 1rem;    
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.cajacontacto{
+    width: 98%;
+    height: 144px;     
+    background-color: rgb(243, 238, 226);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(83, 83, 83);
+}
+.fondoContacto{
+    min-height: 100vh;
+    min-width: 50vh;    
+    background:url(../img2/cohete.jpg) no-repeat fixed;
+    background-size:cover;    
+}
+
+.cajaformulario{
+    width: 50%;
+    height: 400px;     
+    background-color: rgb(243, 238, 226);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(83, 83, 83);
+    padding-top: 1rem;
+
+}
+
+.campo__field{    
+    width: 39%;
+    height: 50px;    
+    border: solid 1px #ccc;
+    outline: none;     
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+        
+}
+.campo__textarea{
+    width: 80%;
+    height: 150px;
+    border: solid 1px #ccc;
+    outline: none;    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+        
+}
+.campo__field:hover{
+    border-color: #1e5797;
+}
+.campo__textarea:hover{
+    border-color:  #1e5797;
+
+}
+/*boton de formulario*/
+
+.btn{
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.btn-green{
+    color:white;
+    background-color: #4696f1;
+}
+.btn-green:hover{
+    background-color: #1e5797;
+}
+.btn-green:active{
+    background-color:#082a52; 
+}
+
+
+
+
+  
+
