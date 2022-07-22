@@ -24,7 +24,7 @@
          pMes = document.getElementById("mes"),
          pYear = document.getElementById("year"); 
          
-    let semana = ["Domingo","Lunes","Martes","Miercoles","Jueves","Vienes","Sabado"];
+    let semana = ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
     pdiasemana.textContent =semana [diasemana];
 
     pDia.textContent = dia;
