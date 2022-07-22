@@ -262,16 +262,7 @@ hero-image {
     text-align: right;
   }
 
-  @media screen  and (max-width: 800px){
-    
-    .about{
-        grid-template-columns: repeat(1,100%);
-      
-    }
-    .gray-scale{
-      margin-top: 10%;
-    }
-}
+ 
   
 /* botom */
 
@@ -381,6 +372,7 @@ hero-image {
     gap: 2rem;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 .cajacontacto{
     width: 98%;
@@ -414,6 +406,7 @@ hero-image {
     text-align: center;
     color: rgb(83, 83, 83);
     padding-top: 1rem;
+    cursor: pointer;
 
 }
 
@@ -464,6 +457,48 @@ hero-image {
     background-color:#082a52; 
 }
 
+@media screen  and (max-width: 800px){
+    
+  .about{
+      grid-template-columns: repeat(1,100%);
+    
+  }
+  .gray-scale{
+    margin-top: 10%;
+  }
+  .contact-card{
+    flex-direction: column;
+    margin: 10% auto;
+  }
+  .cajaformulario{
+    width: 80%;
+    margin-left: 10%;
+
+  }
+  .contenedor{
+    grid-template-columns: repeat(1,90%);
+  }
+  .about{
+    text-align: center;
+  }
+  .text-lg-right{
+    text-align: center;
+  }
+  .navbar ul li{
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(1,50%);
+    padding-top: 8%;
+  }
+  .reloj{
+    padding: 50%;
+    text-align: center;
+  }
+  .fecha{
+    padding:50% ;
+    text-align: center;
+  }
+}
 
 
 
