@@ -23,8 +23,8 @@
   top: 0;
   left: 0;
   background: linear-gradient(90deg, #52c4df,#ad55c1);
-  opacity: 0.3;
-  background-image: url(../img2/images.jpg);
+  opacity: 0.8;
+  background-image: url(../img2/estrellado.jfif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 .navbar h1{
-
+  position: relative;
   color: white;
   font-family: Roboto, "sans-serif";
   
@@ -172,7 +172,11 @@ left: 0;
     margin-top: 0px;
     margin-bottom: 15px;
   }
-
+  .capa{
+    font-size: large;
+    color:azure
+    
+  }
 
 
 
@@ -238,9 +242,9 @@ hero-image {
 }
 
 .hero-image-title {
-  font-size: 7.5vw;
-  color: var(--hero-text-color);
-  color:blanchedalmond;
+  position: relative;
+  font-size: 7.5vw;  
+  color:white;
 }
 /* presentacion foto y habilidades */
 
@@ -290,11 +294,7 @@ hero-image {
 
 
 }
-.capa{
-  font-size: large;
-  color:azure
-  
-}
+
 /* ENCABEZADOS DE LINK INTERNO */
 .titulo{
    
@@ -377,13 +377,13 @@ hero-image {
 .cajacontacto{
     width: 98%;
     height: 144px;     
-    background-color: rgb(243, 238, 226);
+    background-color: rgba(11,103,123,0.6);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     text-align: center;
-    color: rgb(83, 83, 83);
+    color: rgb(244, 242, 242);
 }
 .fondoContacto{
     min-height: 100vh;
@@ -395,7 +395,7 @@ hero-image {
 .cajaformulario{
     width: 50%;
     height: 400px;     
-    background-color: rgb(243, 238, 226);
+    background-color: rgba(11,103,123,0.6);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -404,7 +404,7 @@ hero-image {
     margin-right: 25%;
     border-radius: 10px;
     text-align: center;
-    color: rgb(83, 83, 83);
+    color: rgb(244, 242, 242);
     padding-top: 1rem;
     cursor: pointer;
 
