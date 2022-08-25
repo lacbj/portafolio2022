@@ -14,7 +14,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
- }
+ } 
 .body:before {
   content: " ";
   width: 100%;
@@ -75,6 +75,7 @@ font-size: 1.2rem;
   
 
 }
+
  /* IMAGEN DE MATRIX */
  
  
@@ -118,6 +119,56 @@ left: 0;
   .cont{
     height: 30%;
     width: 30%;
+  }
+
+  /*animacion*/
+  @keyframes coloresEstrellas{
+      0%{background:rgb(245, 239, 239)}
+      25%{background:rgb(249, 253, 2)}
+      50%{background:rgb(255, 72, 0)}
+      75%{background:rgb(251, 255, 13)}
+      100%{background:rgb(245, 239, 239)}
+    
+  }
+  #animation-estrellas{
+    animation-name: coloresEstrellas;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    line-height: 300px;
+    color: #ccc;
+
+  }
+  .estrellas{
+    position: relative;
+    top: 80px;
+    left: 400px;
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+  }
+  .estrellas .e0{
+    top: 180px;
+    left: 500px;
+  }
+  .estrellas .e1{
+    top: 140px;
+    left: 500px;
+  }
+  .estrellas .e2{
+    top: 100px;
+    left: 600px;
+  }
+  .estrellas .e3{
+    top: 400px;
+    left: 50px;
+  }
+  .estrellas .e4{
+    top: 580px;
+    left: 100px;
+  }
+  .estrellas .e5{
+    top: 50px;
+    left: 200px;
   }
 
 /* presentacion foto y habilidades */
